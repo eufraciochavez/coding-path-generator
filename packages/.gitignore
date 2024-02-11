@@ -1,0 +1,56 @@
+# Miscellaneous
+*.class
+# *.lock
+*.log
+*.pyc
+*.swp
+.atom/
+.buildlog/
+.history
+.svn/
+.DS_Store
+
+# Yarn
+.yarn
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+!yarn.lock
+.pnp.*
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code related
+.classpath
+.project
+.settings/
+.vscode/pause-sftp.json
+
+# env files
+.env
+.prod-env
+.env-prod
+.env-dev
+.dev-env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# node.js
+node_modules
+
+# Coverage
+coverage/
+
+# Exceptions to above rules.
+.vercel
+sendgrid.env
+
+web/yarn.lock
