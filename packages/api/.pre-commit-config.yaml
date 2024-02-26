@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/ambv/black
+    rev: 24.1.0
+    hooks:
+      - id: black
+        args: ["-S"]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: double-quote-string-fixer
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v3.0.3"
+    hooks:
+      - id: prettier
+        files: '\.(jsx?|tsx?|css)$'
+        additional_dependencies:
+          - prettier@3.0.3
+          - '@ianvs/prettier-plugin-sort-imports@4.1.1'
+
+exclude: (core\/migrations\/)

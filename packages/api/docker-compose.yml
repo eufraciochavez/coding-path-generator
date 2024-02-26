@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    container_name: cpg_db
+    environment:
+      POSTGRES_USER: "cpg_user"
+      POSTGRES_PASSWORD: "cpg_password"
+      POSTGRES_DB: "cpg_db"
+      PGDATA: /data/postgres
+    volumes:
+      - /data/postgres:/data/postgres:cached
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
